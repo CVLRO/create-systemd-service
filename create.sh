@@ -17,6 +17,7 @@ After=syslog.target
 [Service]
 Type=simple
 ExecStart=$command
+Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
