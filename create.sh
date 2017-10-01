@@ -2,10 +2,6 @@
 
 name=$1
 command=$2
-prefix=${command%% *}
-suffix=${command##* }
-
-command=$(which $prefix)" $suffix"
 
 description=$3
 
